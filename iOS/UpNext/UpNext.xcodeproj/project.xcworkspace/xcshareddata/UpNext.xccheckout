@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>01F032C5-7F25-49D4-BFE3-2C158786BAEC</string>
+	<string>D494DA68-D8FE-44AE-969E-333F8FD7AF79</string>
 	<key>IDESourceControlProjectName</key>
 	<string>UpNext</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>01CAD9F9-7EAE-4455-B63A-7462C4C1C436</key>
-		<string>https://github.com/squareelan/upNext.git</string>
+		<key>B532246A-DFDA-4E79-B972-DFCA61EA2438</key>
+		<string>https://github.com/squareelan/upNextProject.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>iOS/UpNext/UpNext.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>01CAD9F9-7EAE-4455-B63A-7462C4C1C436</key>
+		<key>B532246A-DFDA-4E79-B972-DFCA61EA2438</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/squareelan/upNext.git</string>
+	<string>https://github.com/squareelan/upNextProject.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>01CAD9F9-7EAE-4455-B63A-7462C4C1C436</string>
+	<string>B532246A-DFDA-4E79-B972-DFCA61EA2438</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>01CAD9F9-7EAE-4455-B63A-7462C4C1C436</string>
+			<string>B532246A-DFDA-4E79-B972-DFCA61EA2438</string>
 			<key>IDESourceControlWCCName</key>
-			<string>upNext</string>
+			<string>upNextProject</string>
 		</dict>
 	</array>
 </dict>
