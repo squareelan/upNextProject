@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+                
+    <!-- texts -->
+    <TextView 
+        android:id="@+id/businessName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/businessName"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="14dp"
+        android:textSize="25sp"/>
+    
+    <TextView 
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/category"
+        android:layout_alignBottom="@id/businessName"
+        android:layout_toRightOf="@id/businessName"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="3dp"
+        android:textSize="14sp"/>
+    
+    <TextView
+        android:id="@+id/lastReported"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/businessName"
+        android:layout_below="@+id/businessName"
+        android:text="@string/lastReported"
+        android:textSize="15sp" />
+    
+	<TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"        
+        android:text="@string/distance"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/businessName"
+        android:textSize="15sp"
+        android:layout_marginRight="14dp"/>
+	
+    <TextView 
+	    android:id="@+id/likeNumber"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/likes"
+	    android:layout_below="@id/distance"
+	    android:layout_alignRight="@id/distance"
+	    android:textSize="15sp"/>
+	
+	<!-- Images -->
+    <ImageView 
+        android:id="@+id/busyness"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/lastReported"
+        android:layout_alignLeft="@id/lastReported"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/busy"
+        android:background="@drawable/up_left_bottom_border"/>
+    
+    <ImageView 
+        android:id="@+id/crowd"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/busyness"
+        android:layout_alignTop="@id/busyness"
+        android:src="@drawable/button_0_5ppl"
+        android:background="@drawable/top_bottom_border"/>
+    
+    <ImageView 
+        android:id="@+id/wait"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/crowd"
+        android:layout_alignTop="@id/busyness"
+        android:src="@drawable/button_0_5min"
+        android:background="@drawable/top_bottom_border"/>
+    
+    <ImageView 
+        android:id="@+id/reporter"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/wait"
+        android:layout_alignTop="@id/busyness"
+        android:src="@drawable/white_background"
+        android:background="@drawable/top_bottom_border"/>
+                
+    <ImageView
+        android:id="@+id/update_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/reporter"
+        android:layout_alignTop="@id/busyness"        
+        android:src="@drawable/button_update_unclicked"
+        android:background="@drawable/all_border"
+        android:clickable="true"/>
+    
+    <ImageView 
+        android:id="@+id/heart_button"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/update_button"
+        android:layout_alignRight="@id/update_button"        
+        android:src="@drawable/button_heart_unclicked"
+        android:background="@drawable/left_bottom_right_border"
+        android:clickable="true"/>
+    
+    <ImageView 
+        android:id="@+id/heart"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/heart"
+        android:layout_toLeftOf="@id/likeNumber"
+        android:layout_alignTop="@id/likeNumber"
+        android:layout_alignBottom="@id/likeNumber"
+        android:layout_marginRight="2dp"/>
+    
+    <View 
+        android:layout_height="20dp"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/busyness"/>
+    
+    <TextView
+        android:id="@+id/reported_by_text"
+        android:text="@string/reported_by_msg"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignTop="@id/busyness"
+        android:layout_alignLeft="@id/reporter"
+        android:layout_alignRight="@id/reporter"
+        android:textSize="12sp"
+        android:layout_marginTop="15dp"/>
+    
+    <TextView
+        android:id="@+id/reporter_name"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/reported_by_text"
+        android:layout_alignLeft="@id/reporter"
+        android:layout_alignRight="@id/reporter"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/logo" 
+        android:layout_alignParentTop="true"/>
+    
+    <TextView 
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:lines="2"
+        android:textSize="17sp"
+        android:layout_below="@id/splash_logo"
+        android:text="@string/getStarted"
+        android:id="@+id/getStarted"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"/>
+    
+    <com.facebook.widget.LoginButton
+        android:id="@+id/authButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/getStarted"
+        android:layout_centerInParent="true"        
+        android:layout_marginBottom="30dp" />
+    
+    <Button
+        android:id="@+id/skipLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/authButton"
+        android:text="@string/skipLogin"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

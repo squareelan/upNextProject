@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">upNext</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="splash">Splash</string>
+    
+    <!-- Activity titles -->
+    <string name="ac_name_image_list">Image List Example</string>
+    <string name="ac_name_image_grid">Image Grid Example</string>
+    <string name="ac_name_image_pager">Image Pager Example</string>
+    <string name="ac_name_image_gallery">Image Gallery Example</string>
+    <!-- Labels -->
+    <string name="label_activity_examples">Activity Examples</string>
+    <string name="menu_item_clear_memory_cache">Clear memory cache</string>
+    <string name="menu_item_clear_disc_cache">Clear disc cache</string>
+    <string name="menu_item_pause_on_scroll">Pause on scroll</string>
+    <string name="menu_item_pause_on_fling">Pause on fling</string>
+    <string name="button_image_list">ListView</string>
+    <string name="button_image_grid">GridView</string>
+    <string name="button_image_pager">ViewPager</string>
+    <string name="button_image_gallery">Gallery</string>
+    <string name="business_page">Business</string>
+    <string name="dashboard">Feed</string>
+    <string name="feed">Loading...</string>
+    <string name="checkin">Check-In</string>
+    <string name="businessName">Business Name</string>
+    <string name="reviewCount">123 Reviews</string>
+    <string name="category">Category</string>
+    <string name="crowdSize">Crowd Size</string>
+    <string name="dialog_message">Thank you for submitting your report!</string>
+    <string name="skipLogin">Skip Login</string>
+    <string name="searchHint">Search by location or business</string>
+    <string name="getStarted">To get started, login using Facebook</string>
+    <!-- Content descriptions -->
+    <string name="descr_image">Image</string>
+    <string name="action_button">Action Button</string>
+    <string name="error_dialog_button_text">OK</string>
+    <string name="error_dialog_title">Something Went Wrong</string>
+    <string name="result_dialog_text_canceled">Post canceled.</string>
+    <string name="result_dialog_title">Result</string>
+    <string name="result_dialog_button_text">Thanks!</string>
+    <string name="settings">Settings</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_overflow">Settings</string>
+    <string name="logOutMenu">Log Out</string>
+    <string name="select_waitlist">Report Crowd Size</string>
+    <string name="cancel">Cancel</string>
+    <string name="defaultBusinessName">upNext Business</string>
+    <string name="defaultPosition">Getting information...</string>
+    <string name="dequeue">Remove Me</string>
+    <string name="submit">Submit</string>
+    <string name="lastReported">0 mins ago</string>
+    <string name="AddressLocation">Address, Location</string>
+    <string name="distance">0.0 mi</string>
+    <string name="crowd">How busy is it?</string>
+    <string name="flow">How many people are in line?</string>
+    <string name="waiting">How long is the wait?</string>
+    <string name="reportedBy">Reported by UpNext Team</string>
+    <string name="name">UpNext Tester</string>
+    <string name="point">9999 Points</string>
+    <string name="history">History</string>
+    <string name="likes">12</string>
+    <string name="busy">How busy is it?</string>
+    <string name="line">How long is the line?</string>
+    <string name="wait">How long is the wait?</string>
+    <string name="account">Account</string>
+    <string name="reported_by_msg">Reported By</string>
+    
+    <!-- Spinners -->
+    <string-array name="crowd_sizes">
+        <item>0-5 people</item>
+        <item>5-10 people</item>
+        <item>10-20 people</item>
+        <item>20-30 people</item>
+        <item>30+ people</item>
+    </string-array>
+    
+    <string-array name="wait_times">
+        <item>0-5 mins</item>
+        <item>5-10 mins</item>
+        <item>10-20 mins</item>
+        <item>20-30 mins</item>
+        <item>30+ mins</item>
+    </string-array>
+    
+    <string-array name="histories_sample">
+        <item>4/16 Starbucks SAC 2pts</item>
+        <item>4/16 Starbucks Union 3pts</item>
+        <item>4/16 Fuzzy\'s Taco 1pt</item>
+        <item>4/16 Starbucks SAC 2pts</item>
+        <item>4/16 Starbucks Union 3pts</item>
+        <item>4/16 Fuzzy\'s Taco 1pt</item>
+        <item>4/16 Starbucks SAC 2pts</item>
+        <item>4/16 Starbucks Union 3pts</item>
+        <item>4/16 Fuzzy\'s Taco 1pt</item>
+        <item>4/16 Starbucks SAC 2pts</item>
+        <item>4/16 Starbucks Union 3pts</item>
+        <item>4/16 Fuzzy\'s Taco 1pt</item>
+        <item>4/16 Starbucks SAC 2pts</item>
+        <item>4/16 Starbucks Union 3pts</item>
+        <item>4/16 Fuzzy\'s Taco 1pt</item>
+        <item>4/16 Starbucks SAC 2pts</item>
+        <item>4/16 Starbucks Union 3pts</item>
+        <item>4/16 Fuzzy\'s Taco 1pt</item>
+    </string-array>
+    <string name="app_id">432506960204261</string>
+</resources>

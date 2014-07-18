@@ -1,0 +1,11 @@
+h1 You are in line for: {{currentBiz}}
+.container(ng-repeat="business in businesses")
+    .well
+        a.btn.btn-success(href="{{queue(business.uniqueID)}}") QUEUE
+        .row
+            .col-md-4.col-xs-4
+                h3 {{business.business_name}}
+            .col-md-4.col-xs-4
+                h3 Size: {{business.size}}
+            .col-md-4.col-xs-4
+                h3 ID: {{business.uniqueID}}

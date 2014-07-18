@@ -1,0 +1,159 @@
+Linux cmds
+find running specific processes -> ps aux | grep <processName>
+     ex. ps aux | grep node will display all PID of node processes
+Kill a process -> sudo kill -9 <PID> or sudo kill -9 <name>
+     ex. sudo kill -9 80 or sudo kill -9 java
+--------------------------------------------------------------------------
+Overall reference
+http://www.mean.io/
+This website is like start guide for MEAN stack
+--------------------------------------------------------------------------
+Mongo
+Start MongoDB: anywhere
+mongo
+Exit MongoDB -> quit()
+
+Useful Mongo cmds
+db -> displays current db
+show db -> displays all available db
+use <db> -> use specified db
+help -> display help message
+db.<dbName>.find() -> display all objects in dbName
+db.<dbName>.find().find(n) -> display upto n objects in dbName
+db.<dbName>.findOne() -> display only one object
+
+MongoDB manual
+http://docs.mongodb.org/manual/
+--------------------------------------------------------------------------
+ExpressJS
+Not much to say here..
+
+ExpressJS docs
+http://expressjs.com/api.html
+--------------------------------------------------------------------------
+AngularJS
+I don't know much yet...
+
+AngularJS docs
+http://docs.angularjs.org/api
+--------------------------------------------------------------------------
+Node
+Start server: go to webapp dir then do
+To run locally -> open server.js and change port to 8000
+To run on the web -> open server.js and change port to 80
+1. sudo node sever.js -> stops when you close terminal
+   to stop server -> ctrl + z or ctrl + c
+2. sudo nohup node server.js -> run indefinitely, and logs will be printed
+
+Node docs
+http://nodejs.org/api/
+--------------------------------------------------------------------------
+AWS
+to get to webapp folder:
+	from ~ -> cd gsu/production/inqueue-webserver/
+update the latest changes from github to aws:
+	from ~ -> cd gsu/production
+	          ./run.sh
+	 !!!! make sure to let web team know when you're doing this !!!!!!!!!!
+run server indefinitely:
+	from inqueue-webserver -> sudo nohup node server.js
+--------------------------------------------------------------------------
+Git
+
+push it to your forked repo: git push -u fork
+
+pull from original repo: git pull -u origin master
+--------------------------------------------------------------------------
+Curl
+
+curl -X POST -H "Content-Type: application/json" -d '{"userId": "SiWan90","uniqueID":ObjectId("5245289722715edac75e41ce")}' www.uhpnext.com/api/queue
+
+curl -X POST -H "Content-type: application/json" -d '{"uniqueID":ObjectId("5245289722715edac75e41ce"), "userId": "SiWan90"}' localhost/api/queue
+
+curl -X POST -H "Content-type: application/json" -d '{"name":"Danny"}' localhost/api/demo
+
+
+curl -X GET -H "Content-Type: application/json" -d '{"oauth_consumer_key":"Q8M5qK_k1Kn8oGNp6WZTrg"}' http://api.yelp.com/v2/business/yelp-san-francisco
+
+curl -X GET -H "Content-Type: application/json" localhost/yelp_business/?bizName=salty-sow-austin
+
+curl -X GET -H "Content-Type: application/json" localhost/yelp_search/?term=coffee&location=austin
+
+curl "http://localhost/yelp_search?term=food&location=houston"
+
+--------------------------------------------------------------------------
+GET API
+
+/api/rate/business/?name={ BUSINESS_NAME }&rating={ RATING_NUMBER }
+output: success or failure message.
+Rates a business. Checks if we have it in Mongo. If we have it, average the current rating with the input rating.
+
+/api/business/?name={ BUSINESS_NAME }
+output: { "name": { BUSINESS_NAME },
+          "rating": { WAIT_TIME },
+          "ratingLog": [ { BUSINESS_RATING1 },{ BUSINESS_RATING2 }, ... ],
+          "logSize": { RATING_LOG_SIZE_NUMBER }
+        }
+Retrieves information about the given business.
+
+/api/find-nearby-businesses/?term={ SEARCH_TERM }&location={ USER_LOCATION }
+output: { "businesses": {
+              {"name": { BUSINESS_NAME },
+               "id": { YELP_BUSINESS_ID },
+               "location": { BUSINESS_LOCAATION INFO }
+               "waitTime": { BUSINESS_WAIT_TIME }
+              },
+              {...},
+              {...}, ...
+          },
+          "size": { NUMBER_OF_BUSINESSES_FOUND }
+        }
+        
+http://uhpnext.com/api/dequeue/?number=911&first=Jo&last=Kim&id=123
+output-1: 
+	"Fail": "No one is in queue."
+output-2: 
+	"Success": "You are out of queue!"
+	
+http://uhpnext.com/api/enqueue/?number=911&first=Jo&last=Kim&id=123&prod=true
+optional param: prod.
+output-1:
+	"Success": "You are in queue! Enjoy your time elsewhere!"
+output-2:
+	"Fail": "Unable to enqueue."
+
+http://uhpnext.com/api/delta/?id=123
+success case:
+{
+  "Message": "Returning delta.",
+  "deltaBiz": [
+    {
+      "phone": "911",
+      "last": "Kim",
+      "first": "Jo"
+    },
+    {
+      "phone": "911",
+      "last": "Kim",
+      "first": "Jo"
+    }
+  ],
+  "size": 2,
+  "Status": "Success"
+}
+
+POST /twilio
+hitting from cURL -> curl -X POST 'http://www.uhpnext.com/twilio' --data 'number={your_number}'
+NOTE: this will not work until we update your twilio account.
+
+****** DEPRECATED *******
+/api/latestlog
+Retrieves the most recent log form Mongo.
+
+--------------------------------------------------------------------------
+****** DEPRECATED *******
+POST API
+/api/log 
+Records a log so that we can see who has been making requests to the server.
+input: { "device": { NAME },
+         "messages": [ MESSAGE1, MESSAGE2,... ] } 

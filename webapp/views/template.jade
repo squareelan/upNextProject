@@ -1,0 +1,111 @@
+!!! 5
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title
+      | upNext - Index
+    link(href='https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css', rel='stylesheet')
+    link(href='css/screen-e052b49956.css', rel='stylesheet')
+  link(href='../public/css/bootstrap.css', rel='stylesheet')
+  style(type='text/css')
+    body {
+    padding-bottom: 40px;
+    }
+    .container-narrow {
+    margin: 0 auto;
+    max-width: 900px;
+    }
+    .container-narrow > hr {
+    margin: 30px 0;
+    }
+    .jumbotron {
+    margin: 0;
+    text-align: center;
+    background-image:url('img/jumbotron.png');
+    }
+    .jumbotron h1 {
+    font-size: 100px;
+    line-height: 1;
+    color:#ffffff;
+    }
+    .jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+    }
+    .hero-unit h1{
+    font-size: 70px;
+    light-height: 1;
+    }
+    .marketing {
+    margin: 60px 0;
+    }
+    .muted {
+    color: #777;
+    }
+    .text-center {
+    color: #ffffff;
+    }
+  link(href='../public/css/bootstrap-responsive.css', rel='stylesheet')
+  body
+    #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+      .modal-dialog
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+            h4.modal-title(align='center') upNext
+          .modal-body
+            .form-group
+              input.form-control(type='text', placeholder='Username')
+              p
+              input.form-control(type='text', placeholder='Password')
+          .modal-footer
+            button.btn.btn-default(type='button', data-dismiss='modal', align='center') Close
+            button.btn.btn-primary(type='button', align='center') Log in
+        // /.modal-content
+      // /.modal-dialog
+    // /.modal
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/') upNext
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='/') Home
+            li
+              a(href='#about') About
+            li
+              a(href='#Business') How It Works
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                | Business
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Pricing
+                li
+                  a(href='#') Testimony                
+                li.divider
+                li.dropdown-header
+                  | Nav header
+                li
+                  a(href='#') Sign Up              
+          .nav.nav-pills.pull-right
+            a.btn.btn-success.navbar-btn(role="button", href='#myModal',data-toggle="modal")
+              | Log In
+            a.btn.btn-primary.navbar-btn(href='myModal')
+              | Sign Up
+    //start from here
+    
+    hr
+  include footer
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+  script(src='https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js')
+          

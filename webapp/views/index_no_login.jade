@@ -1,0 +1,214 @@
+!!! 5
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title
+      | upNext - Index
+    //link(href='https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.css', rel='stylesheet')
+    link(href='css/bootstrap.min.css', rel='stylesheet')
+  style(type='text/css')
+    body {
+    padding-bottom: 40px;
+    }
+    .container-narrow {
+    margin: 0 auto;
+    max-width: 900px;
+    }
+    .container-narrow > hr {
+    margin: 30px 0;
+    }
+    .jumbotron {
+    margin: 0;
+    text-align: center;
+    background-image:url('img/jumbotron.png');
+    }
+    .jumbotron h1 {
+    font-size: 100px;
+    line-height: 1;
+    color:#ffffff;
+    }
+    .jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+    }
+    .jumbotron h2 {
+    text-align:left;
+    color:#ffffff;
+    }
+    .jumbotron h4 {
+    text-align:left;
+    font-style: italic;
+    color:#ffffff;
+    }
+    .hero-unit h1{
+    font-size: 70px;
+    light-height: 1;
+    }
+    .marketing {
+    margin: 60px 0;
+    }
+    .muted {
+    color: #777;
+    }
+    .text-center {
+    color: #ffffff;
+    }
+  link(href='../public/css/bootstrap-responsive.css', rel='stylesheet')
+  body
+    #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+      .modal-dialog(style='padding-top: 100px; max-width: 400px;')
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+            h4.modal-title(align='center') upNext
+          .modal-body
+            // social media log in
+            // facebook
+            div(align='center')
+              a(href='/auth/facebook')
+                img(src='img/facebook.png')
+            p
+            // twitter
+            div(align='center')
+              a(href="/auth/twitter")                
+                img(src='img/twitter.png')
+            //---- or -----
+            table(width='100%')
+              td
+                hr
+              td(style='width: 1px; padding: 0 10px; white-space: nowrap;') or
+              td
+                hr
+            //local login
+            div(align='center')
+              //.form-group(id='form-login', method='post', action='/local-login')
+              //  input.form-control(id='emailinput', type='text', placeholder='Email', style='width: 80%;', name='email')
+              //  p
+              //  input.form-control(type='password', placeholder='Password', style='width: 80%;', name='password')
+              //  p
+              //  input.button.btn.btn-success.btn(id='btn-login',type='submit', align='center' style='width: 80%;') Log in
+              //  input(type='submit', id='btn-login',value='log in')
+              form(id='form-login2', method='post', action='/local-login')
+                div
+                  input.form-control(type='text', placeholder='Email', style='width: 80%;', name='username')
+                  p
+                div
+                  input.form-control(type='password', placeholder='Password', style='width: 80%', name='password')
+                  p
+                div
+                  input.button.btn.btn-success.btn(id='btn-login2', style='width: 80%;', type='submit', value='Log in') Log In
+                  p
+              a(href='#reset-password')
+                | Forgot your password?
+              p
+              p Don't have an account?  
+                a(href='#signup')
+                  | Sign up
+        // /.modal-content
+      // /.modal-dialog
+    // /.modal
+    .navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/') upNext
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='/') Home
+            li
+              a(href='#about') About
+            li
+              a(href='#works') How It Works
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                | Business
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Pricing
+                li
+                  a(href='#') Testimony                
+                li.divider
+                li.dropdown-header
+                  | Business Sign Up
+                li
+                  a(href='#') Sign Up              
+          //  .nav.nav-pills.pull-right
+              a.btn.btn-success.navbar-btn(role="button", href='#myModal',data-toggle="modal")
+                -if(user)
+                  | #{user.username}
+                -else
+                  | Log In            
+    .jumbotron
+      .container
+        h1.text-center
+          | The smartest waitlist ever.
+        p.text-center
+          | We wait.
+          b You explore
+          | .
+        p
+      br
+      .container
+        .row
+          .col-md-6.col-md-offset-3
+            h2 Stay In Touch
+            h4 Sign up to receive updates from upNext
+            form(id='form-subscribe', method='post', action='/api/subscribe')
+              .input-group
+                input.form-control(type='text', placeholder='Email Address', name='email', style='min-height: 60px; font-size:25px;')
+                span.input-group-btn
+                  input.button.btn-info.btn(id='btn-subscribe', type='submit', value='Submit')
+      //a.btn.btn-primary.btn-lg(align='center') Get Started Today »
+    .container
+      .row
+        .col-md-4
+          h2
+            | Check-in & walk away
+          p
+            | No need to wait in a line or stay nearby businesses. Simply check-in yourself
+            | using upNext and we will notify you when they are ready.
+          p
+            a.btn.btn-default(href='#works') View details »
+        .col-md-4
+          h2
+            | Real-time wait time update
+          p
+            | Tired of waiting until your pager rings? upNext will give you accurate
+            | approximate wait time including how many parties are ahead of you.
+          p
+            a.btn.btn-default(href='##works') View details »
+        .col-md4(style='display: block;')
+          h2
+            | Get the best deal from businesses
+          p
+            | We all love to have a good time and spend less money as possible. When
+            | you check-in to a business, upNext will display current deals or happy
+            | hour, or you can always check them online.
+          p
+            a.btn.btn-default(href='##works') View details »
+      hr
+  include footer
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
+  script(src='https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js')
+  script(type='text/javascript')
+    $(window).load(function() {
+      $("#btn-login2").click(function() {
+          $("#form-login2").submit();
+      });
+    });
+
+  script(type='text/javascript')
+    $(window).load(function(){
+      $("#btn-subscribe").click(function(){
+        $("#form-subscribe").submit();
+      });
+    });
+          

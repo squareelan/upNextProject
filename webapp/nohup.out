@@ -1,0 +1,415 @@
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module './keys.secret'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/home/jkim/aws/production/upNext/webapp/server.js:14:12)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Function.Module.runMain (module.js:497:10)
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module './keys.secret'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/home/jkim/aws/production/upNext/webapp/server.js:14:12)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Function.Module.runMain (module.js:497:10)
+Listening on port 80
+/home/jkim/aws/production/upNext/webapp/views/index.jade, line 14:
+Implicit textOnly for `script` and `style` is deprecated.  Use `script.` or `style.` instead.
+24.155.244.46 - - [Thu, 19 Sep 2013 03:35:20 GMT] "GET / HTTP/1.1" 200 4743 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+24.155.244.46 - - [Thu, 19 Sep 2013 03:35:20 GMT] "GET /css/screen-e052b49956.css HTTP/1.1" 404 - "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+24.155.244.46 - - [Thu, 19 Sep 2013 03:35:20 GMT] "GET /public/css/bootstrap.css HTTP/1.1" 404 - "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+24.155.244.46 - - [Thu, 19 Sep 2013 03:35:20 GMT] "GET /public/css/bootstrap-responsive.css HTTP/1.1" 404 - "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+24.155.244.46 - - [Thu, 19 Sep 2013 03:35:20 GMT] "GET /img/twitter.png HTTP/1.1" 200 2830 "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+/home/jkim/aws/production/upNext/webapp/views/index.jade, line 14:
+Implicit textOnly for `script` and `style` is deprecated.  Use `script.` or `style.` instead.
+24.155.244.46 - - [Thu, 19 Sep 2013 03:35:24 GMT] "GET / HTTP/1.1" 200 4743 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+24.155.244.46 - - [Thu, 19 Sep 2013 03:35:24 GMT] "GET /css/screen-e052b49956.css HTTP/1.1" 404 - "http://www.uhpnext.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+24.155.244.46 - - [Thu, 19 Sep 2013 03:35:24 GMT] "GET /public/css/bootstrap.css HTTP/1.1" 404 - "http://www.uhpnext.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+24.155.244.46 - - [Thu, 19 Sep 2013 03:35:24 GMT] "GET /public/css/bootstrap-responsive.css HTTP/1.1" 404 - "http://www.uhpnext.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+24.155.244.46 - - [Thu, 19 Sep 2013 03:35:24 GMT] "GET /img/twitter.png HTTP/1.1" 200 2830 "http://www.uhpnext.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+24.155.244.46 - - [Thu, 19 Sep 2013 03:35:24 GMT] "GET /auth/twitter HTTP/1.1" 302 246 "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+Error: Failed to find request token in session
+    at Strategy.OAuthStrategy.authenticate (/home/jkim/aws/production/upNext/webapp/node_modules/passport-twitter/node_modules/passport-oauth1/lib/strategy.js:142:54)
+    at Strategy.authenticate (/home/jkim/aws/production/upNext/webapp/node_modules/passport-twitter/lib/strategy.js:85:40)
+    at attempt (/home/jkim/aws/production/upNext/webapp/node_modules/passport/lib/passport/middleware/authenticate.js:243:16)
+    at Passport.authenticate (/home/jkim/aws/production/upNext/webapp/node_modules/passport/lib/passport/middleware/authenticate.js:244:7)
+    at callbacks (/home/jkim/aws/production/upNext/webapp/node_modules/express/lib/router/index.js:161:37)
+    at param (/home/jkim/aws/production/upNext/webapp/node_modules/express/lib/router/index.js:135:11)
+    at pass (/home/jkim/aws/production/upNext/webapp/node_modules/express/lib/router/index.js:142:5)
+    at Router._dispatch (/home/jkim/aws/production/upNext/webapp/node_modules/express/lib/router/index.js:170:5)
+    at Object.router (/home/jkim/aws/production/upNext/webapp/node_modules/express/lib/router/index.js:33:10)
+    at Context.next (/home/jkim/aws/production/upNext/webapp/node_modules/express/node_modules/connect/lib/proto.js:190:15)
+24.155.244.46 - - [Thu, 19 Sep 2013 03:35:27 GMT] "GET /auth/twitter/callback?oauth_token=ztEnURAZ0zFicHLwp2deXJmqXz3vzzl8KTlXxTfA&oauth_verifier=kA9iZrggAUoxCn7fHGI3M2zLNI4LgHKbvmtSXZ3AKs HTTP/1.1" 500 1259 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+24.155.244.46 - - [Thu, 19 Sep 2013 03:35:35 GMT] "GET /auth/twitter HTTP/1.1" 302 250 "http://www.uhpnext.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+24.155.244.46 - - [Thu, 19 Sep 2013 03:35:39 GMT] "GET /img/jumbotron.png HTTP/1.1" 206 1 "http://www.uhpnext.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+24.155.244.46 - - [Thu, 19 Sep 2013 03:35:41 GMT] "GET /img/jumbotron.png HTTP/1.1" 206 643802 "http://www.uhpnext.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+24.155.244.46 - - [Thu, 19 Sep 2013 03:35:44 GMT] "GET /img/jumbotron.png HTTP/1.1" 206 1 "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+/home/jkim/aws/production/upNext/webapp/views/index.jade, line 14:
+Implicit textOnly for `script` and `style` is deprecated.  Use `script.` or `style.` instead.
+24.155.244.46 - - [Thu, 19 Sep 2013 03:35:45 GMT] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+24.155.244.46 - - [Thu, 19 Sep 2013 03:35:45 GMT] "GET /css/screen-e052b49956.css HTTP/1.1" 404 - "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+24.155.244.46 - - [Thu, 19 Sep 2013 03:35:45 GMT] "GET /public/css/bootstrap.css HTTP/1.1" 404 - "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+24.155.244.46 - - [Thu, 19 Sep 2013 03:35:45 GMT] "GET /public/css/bootstrap-responsive.css HTTP/1.1" 404 - "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+24.155.244.46 - - [Thu, 19 Sep 2013 03:35:45 GMT] "GET /img/twitter.png HTTP/1.1" 304 - "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+24.155.244.46 - - [Thu, 19 Sep 2013 03:35:45 GMT] "GET /img/jumbotron.png HTTP/1.1" 206 1 "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+24.155.244.46 - - [Thu, 19 Sep 2013 03:35:48 GMT] "GET /auth/twitter HTTP/1.1" 302 250 "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+Error: Failed to find request token in session
+    at Strategy.OAuthStrategy.authenticate (/home/jkim/aws/production/upNext/webapp/node_modules/passport-twitter/node_modules/passport-oauth1/lib/strategy.js:142:54)
+    at Strategy.authenticate (/home/jkim/aws/production/upNext/webapp/node_modules/passport-twitter/lib/strategy.js:85:40)
+    at attempt (/home/jkim/aws/production/upNext/webapp/node_modules/passport/lib/passport/middleware/authenticate.js:243:16)
+    at Passport.authenticate (/home/jkim/aws/production/upNext/webapp/node_modules/passport/lib/passport/middleware/authenticate.js:244:7)
+    at callbacks (/home/jkim/aws/production/upNext/webapp/node_modules/express/lib/router/index.js:161:37)
+    at param (/home/jkim/aws/production/upNext/webapp/node_modules/express/lib/router/index.js:135:11)
+    at pass (/home/jkim/aws/production/upNext/webapp/node_modules/express/lib/router/index.js:142:5)
+    at Router._dispatch (/home/jkim/aws/production/upNext/webapp/node_modules/express/lib/router/index.js:170:5)
+    at Object.router (/home/jkim/aws/production/upNext/webapp/node_modules/express/lib/router/index.js:33:10)
+    at Context.next (/home/jkim/aws/production/upNext/webapp/node_modules/express/node_modules/connect/lib/proto.js:190:15)
+24.155.244.46 - - [Thu, 19 Sep 2013 03:35:50 GMT] "GET /auth/twitter/callback?oauth_token=CuOpg77mpGlatPZ4cy9X2KdvF8NZDc1xQaMDpmvHFI&oauth_verifier=wwFRXp0db2q61QhSUuCXuwbtEAM5aLhxKlVe2nXvguU HTTP/1.1" 500 1259 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+24.155.244.46 - - [Thu, 19 Sep 2013 03:35:58 GMT] "GET /auth/twitter HTTP/1.1" 302 246 "http://www.uhpnext.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+FOUND USER
+
+/home/jkim/aws/production/upNext/webapp/node_modules/mongojs/node_modules/mongodb/lib/mongodb/connection/server.js:565
+        throw err;
+              ^
+TypeError: Cannot read property 'business' of null
+    at /home/jkim/aws/production/upNext/webapp/server.js:50:19
+    at /home/jkim/aws/production/upNext/webapp/node_modules/mongojs/node_modules/mongodb/lib/mongodb/cursor.js:674:35
+    at Cursor.close (/home/jkim/aws/production/upNext/webapp/node_modules/mongojs/node_modules/mongodb/lib/mongodb/cursor.js:881:5)
+    at Cursor.nextObject (/home/jkim/aws/production/upNext/webapp/node_modules/mongojs/node_modules/mongodb/lib/mongodb/cursor.js:674:17)
+    at commandHandler (/home/jkim/aws/production/upNext/webapp/node_modules/mongojs/node_modules/mongodb/lib/mongodb/cursor.js:650:14)
+    at null.<anonymous> (/home/jkim/aws/production/upNext/webapp/node_modules/mongojs/node_modules/mongodb/lib/mongodb/db.js:1629:20)
+    at g (events.js:175:14)
+    at EventEmitter.emit (events.js:106:17)
+    at Server.Base._callHandler (/home/jkim/aws/production/upNext/webapp/node_modules/mongojs/node_modules/mongodb/lib/mongodb/connection/base.js:391:25)
+    at /home/jkim/aws/production/upNext/webapp/node_modules/mongojs/node_modules/mongodb/lib/mongodb/connection/server.js:558:20
+Listening on port 80
+/home/jkim/aws/production/upNext/webapp/views/index.jade, line 14:
+Implicit textOnly for `script` and `style` is deprecated.  Use `script.` or `style.` instead.
+128.62.37.150 - - [Thu, 19 Sep 2013 17:29:30 GMT] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.37.150 - - [Thu, 19 Sep 2013 17:29:30 GMT] "GET /css/screen-e052b49956.css HTTP/1.1" 404 - "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.37.150 - - [Thu, 19 Sep 2013 17:29:31 GMT] "GET /public/css/bootstrap.css HTTP/1.1" 404 - "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.37.150 - - [Thu, 19 Sep 2013 17:29:31 GMT] "GET /public/css/bootstrap-responsive.css HTTP/1.1" 404 - "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.37.150 - - [Thu, 19 Sep 2013 17:29:31 GMT] "GET /img/twitter.png HTTP/1.1" 304 - "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.37.150 - - [Thu, 19 Sep 2013 17:29:31 GMT] "GET /img/jumbotron.png HTTP/1.1" 206 1 "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.37.150 - - [Thu, 19 Sep 2013 17:29:32 GMT] "GET /img/jumbotron.png HTTP/1.1" 206 1228914 "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.37.150 - - [Thu, 19 Sep 2013 17:29:36 GMT] "GET /auth/twitter HTTP/1.1" 302 252 "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+/home/jkim/aws/production/upNext/webapp/views/index.jade, line 14:
+Implicit textOnly for `script` and `style` is deprecated.  Use `script.` or `style.` instead.
+128.62.37.150 - - [Thu, 19 Sep 2013 17:30:02 GMT] "GET / HTTP/1.1" 200 4743 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.37.150 - - [Thu, 19 Sep 2013 17:30:02 GMT] "GET /css/screen-e052b49956.css HTTP/1.1" 404 - "http://www.uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.37.150 - - [Thu, 19 Sep 2013 17:30:02 GMT] "GET /public/css/bootstrap.css HTTP/1.1" 404 - "http://www.uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.37.150 - - [Thu, 19 Sep 2013 17:30:02 GMT] "GET /public/css/bootstrap-responsive.css HTTP/1.1" 404 - "http://www.uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.37.150 - - [Thu, 19 Sep 2013 17:30:02 GMT] "GET /img/twitter.png HTTP/1.1" 200 2830 "http://www.uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.37.150 - - [Thu, 19 Sep 2013 17:30:04 GMT] "GET /img/jumbotron.png HTTP/1.1" 200 2772482 "http://www.uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+/home/jkim/aws/production/upNext/webapp/views/index.jade, line 14:
+Implicit textOnly for `script` and `style` is deprecated.  Use `script.` or `style.` instead.
+70.114.137.207 - - [Thu, 19 Sep 2013 17:33:36 GMT] "GET / HTTP/1.1" 200 4743 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20100101 Firefox/23.0"
+70.114.137.207 - - [Thu, 19 Sep 2013 17:33:37 GMT] "GET /css/screen-e052b49956.css HTTP/1.1" 404 - "http://uhpnext.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20100101 Firefox/23.0"
+70.114.137.207 - - [Thu, 19 Sep 2013 17:33:37 GMT] "GET /public/css/bootstrap.css HTTP/1.1" 404 - "http://uhpnext.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20100101 Firefox/23.0"
+70.114.137.207 - - [Thu, 19 Sep 2013 17:33:37 GMT] "GET /public/css/bootstrap-responsive.css HTTP/1.1" 404 - "http://uhpnext.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20100101 Firefox/23.0"
+70.114.137.207 - - [Thu, 19 Sep 2013 17:33:37 GMT] "GET /img/twitter.png HTTP/1.1" 200 2830 "http://uhpnext.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20100101 Firefox/23.0"
+70.114.137.207 - - [Thu, 19 Sep 2013 17:33:39 GMT] "GET /img/jumbotron.png HTTP/1.1" 200 2772482 "http://uhpnext.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20100101 Firefox/23.0"
+70.114.137.207 - - [Thu, 19 Sep 2013 17:33:40 GMT] "GET /favicon.ico HTTP/1.1" 404 - "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20100101 Firefox/23.0"
+65.55.24.221 - - [Thu, 19 Sep 2013 19:14:51 GMT] "GET /robots.txt HTTP/1.1" 404 - "-" "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)"
+/home/jkim/aws/production/upNext/webapp/views/index.jade, line 14:
+Implicit textOnly for `script` and `style` is deprecated.  Use `script.` or `style.` instead.
+65.55.24.221 - - [Thu, 19 Sep 2013 19:15:19 GMT] "GET / HTTP/1.1" 200 4743 "-" "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)"
+/home/jkim/aws/production/upNext/webapp/views/index.jade, line 14:
+Implicit textOnly for `script` and `style` is deprecated.  Use `script.` or `style.` instead.
+128.62.28.198 - - [Thu, 19 Sep 2013 20:04:07 GMT] "GET / HTTP/1.1" 200 4743 "-" "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+128.62.28.198 - - [Thu, 19 Sep 2013 20:04:07 GMT] "GET /css/screen-e052b49956.css HTTP/1.1" 404 - "http://uhpnext.com/" "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+128.62.28.198 - - [Thu, 19 Sep 2013 20:04:07 GMT] "GET /public/css/bootstrap.css HTTP/1.1" 404 - "http://uhpnext.com/" "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+128.62.28.198 - - [Thu, 19 Sep 2013 20:04:07 GMT] "GET /public/css/bootstrap-responsive.css HTTP/1.1" 404 - "http://uhpnext.com/" "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+128.62.28.198 - - [Thu, 19 Sep 2013 20:04:07 GMT] "GET /img/twitter.png HTTP/1.1" 200 2830 "http://uhpnext.com/" "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+128.62.28.198 - - [Thu, 19 Sep 2013 20:04:09 GMT] "GET /img/jumbotron.png HTTP/1.1" 200 2772482 "http://uhpnext.com/" "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+128.62.28.198 - - [Thu, 19 Sep 2013 20:04:09 GMT] "GET /favicon.ico HTTP/1.1" 404 - "-" "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+/home/jkim/aws/production/upNext/webapp/views/index.jade, line 14:
+Implicit textOnly for `script` and `style` is deprecated.  Use `script.` or `style.` instead.
+128.62.30.147 - - [Thu, 19 Sep 2013 20:06:25 GMT] "GET / HTTP/1.1" 200 4743 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.30.147 - - [Thu, 19 Sep 2013 20:06:25 GMT] "GET /css/screen-e052b49956.css HTTP/1.1" 404 - "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.30.147 - - [Thu, 19 Sep 2013 20:06:25 GMT] "GET /public/css/bootstrap.css HTTP/1.1" 404 - "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.30.147 - - [Thu, 19 Sep 2013 20:06:25 GMT] "GET /public/css/bootstrap-responsive.css HTTP/1.1" 404 - "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.30.147 - - [Thu, 19 Sep 2013 20:06:25 GMT] "GET /img/twitter.png HTTP/1.1" 200 2830 "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.30.147 - - [Thu, 19 Sep 2013 20:06:29 GMT] "GET /img/jumbotron.png HTTP/1.1" 200 2772482 "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.30.147 - - [Thu, 19 Sep 2013 20:06:29 GMT] "GET /favicon.ico HTTP/1.1" 404 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+64.134.26.55 - - [Thu, 19 Sep 2013 21:22:31 GMT] "GET /api/demo HTTP/1.1" 200 24 "-" "curl/7.25.0 (x86_64-apple-darwin10.8.0) libcurl/7.25.0 OpenSSL/1.0.1b zlib/1.2.7 libidn/1.22"
+Error: invalid json, empty body
+    at Object.exports.error (/home/jkim/aws/production/upNext/webapp/node_modules/express/node_modules/connect/lib/utils.js:60:13)
+    at IncomingMessage.<anonymous> (/home/jkim/aws/production/upNext/webapp/node_modules/express/node_modules/connect/lib/middleware/json.js:71:29)
+    at IncomingMessage.EventEmitter.emit (events.js:92:17)
+    at _stream_readable.js:883:14
+    at process._tickCallback (node.js:415:13)
+64.134.26.55 - - [Thu, 19 Sep 2013 21:22:44 GMT] "GET /api/demo HTTP/1.1" 400 449 "-" "curl/7.25.0 (x86_64-apple-darwin10.8.0) libcurl/7.25.0 OpenSSL/1.0.1b zlib/1.2.7 libidn/1.22"
+64.134.26.55 - - [Thu, 19 Sep 2013 21:22:55 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "curl/7.25.0 (x86_64-apple-darwin10.8.0) libcurl/7.25.0 OpenSSL/1.0.1b zlib/1.2.7 libidn/1.22"
+64.134.26.55 - - [Thu, 19 Sep 2013 21:23:52 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+64.134.26.55 - - [Thu, 19 Sep 2013 21:24:38 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 21:24:38 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 21:24:39 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+64.134.26.55 - - [Thu, 19 Sep 2013 21:24:59 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+64.134.26.55 - - [Thu, 19 Sep 2013 21:25:30 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 21:25:32 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 21:25:33 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+64.134.26.55 - - [Thu, 19 Sep 2013 21:26:30 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 21:26:31 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 21:26:31 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 21:43:57 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 21:43:57 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 21:43:58 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+64.134.26.55 - - [Thu, 19 Sep 2013 21:44:12 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+64.134.26.55 - - [Thu, 19 Sep 2013 21:44:13 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+64.134.26.55 - - [Thu, 19 Sep 2013 21:44:13 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+64.134.26.55 - - [Thu, 19 Sep 2013 21:44:31 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+64.134.26.55 - - [Thu, 19 Sep 2013 21:47:46 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 21:48:34 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+64.134.26.55 - - [Thu, 19 Sep 2013 21:48:34 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+64.134.26.55 - - [Thu, 19 Sep 2013 21:48:35 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+Error: invalid json
+    at Object.exports.error (/home/jkim/aws/production/upNext/webapp/node_modules/express/node_modules/connect/lib/utils.js:60:13)
+    at IncomingMessage.<anonymous> (/home/jkim/aws/production/upNext/webapp/node_modules/express/node_modules/connect/lib/middleware/json.js:74:71)
+    at IncomingMessage.EventEmitter.emit (events.js:92:17)
+    at _stream_readable.js:883:14
+    at process._tickCallback (node.js:415:13)
+64.134.26.55 - - [Thu, 19 Sep 2013 21:48:54 GMT] "POST /api/ping HTTP/1.1" 400 437 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+Error: invalid json
+    at Object.exports.error (/home/jkim/aws/production/upNext/webapp/node_modules/express/node_modules/connect/lib/utils.js:60:13)
+    at IncomingMessage.<anonymous> (/home/jkim/aws/production/upNext/webapp/node_modules/express/node_modules/connect/lib/middleware/json.js:74:71)
+    at IncomingMessage.EventEmitter.emit (events.js:92:17)
+    at _stream_readable.js:883:14
+    at process._tickCallback (node.js:415:13)
+128.62.58.156 - - [Thu, 19 Sep 2013 22:29:53 GMT] "POST /api/ping HTTP/1.1" 400 437 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+Error: invalid json
+    at Object.exports.error (/home/jkim/aws/production/upNext/webapp/node_modules/express/node_modules/connect/lib/utils.js:60:13)
+    at IncomingMessage.<anonymous> (/home/jkim/aws/production/upNext/webapp/node_modules/express/node_modules/connect/lib/middleware/json.js:74:71)
+    at IncomingMessage.EventEmitter.emit (events.js:92:17)
+    at _stream_readable.js:883:14
+    at process._tickCallback (node.js:415:13)
+128.62.58.156 - - [Thu, 19 Sep 2013 22:30:55 GMT] "POST /api/ping HTTP/1.1" 400 437 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 22:31:38 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 22:31:38 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 22:31:38 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+128.62.58.156 - - [Thu, 19 Sep 2013 22:33:00 GMT] "GET /api/demo HTTP/1.1" 200 24 "-" "curl/7.25.0 (x86_64-apple-darwin10.8.0) libcurl/7.25.0 OpenSSL/1.0.1b zlib/1.2.7 libidn/1.22"
+128.62.58.156 - - [Thu, 19 Sep 2013 22:33:24 GMT] "POST /api/demo HTTP/1.1" 404 - "-" "curl/7.25.0 (x86_64-apple-darwin10.8.0) libcurl/7.25.0 OpenSSL/1.0.1b zlib/1.2.7 libidn/1.22"
+128.62.58.156 - - [Thu, 19 Sep 2013 22:33:49 GMT] "POST /api/demo HTTP/1.1" 404 - "-" "curl/7.25.0 (x86_64-apple-darwin10.8.0) libcurl/7.25.0 OpenSSL/1.0.1b zlib/1.2.7 libidn/1.22"
+128.62.58.156 - - [Thu, 19 Sep 2013 22:34:01 GMT] "GET /api/demo HTTP/1.1" 200 24 "-" "curl/7.25.0 (x86_64-apple-darwin10.8.0) libcurl/7.25.0 OpenSSL/1.0.1b zlib/1.2.7 libidn/1.22"
+Error: invalid json
+    at Object.exports.error (/home/jkim/aws/production/upNext/webapp/node_modules/express/node_modules/connect/lib/utils.js:60:13)
+    at IncomingMessage.<anonymous> (/home/jkim/aws/production/upNext/webapp/node_modules/express/node_modules/connect/lib/middleware/json.js:74:71)
+    at IncomingMessage.EventEmitter.emit (events.js:92:17)
+    at _stream_readable.js:883:14
+    at process._tickCallback (node.js:415:13)
+128.62.58.156 - - [Thu, 19 Sep 2013 22:34:24 GMT] "POST /api/ping HTTP/1.1" 400 437 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+128.62.58.156 - - [Thu, 19 Sep 2013 22:35:26 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "curl/7.25.0 (x86_64-apple-darwin10.8.0) libcurl/7.25.0 OpenSSL/1.0.1b zlib/1.2.7 libidn/1.22"
+128.62.58.156 - - [Thu, 19 Sep 2013 22:35:33 GMT] "POST /api/ping HTTP/1.1" 404 - "-" "curl/7.25.0 (x86_64-apple-darwin10.8.0) libcurl/7.25.0 OpenSSL/1.0.1b zlib/1.2.7 libidn/1.22"
+128.62.58.156 - - [Thu, 19 Sep 2013 22:35:38 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "curl/7.25.0 (x86_64-apple-darwin10.8.0) libcurl/7.25.0 OpenSSL/1.0.1b zlib/1.2.7 libidn/1.22"
+128.62.58.156 - - [Thu, 19 Sep 2013 22:35:58 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 22:36:38 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 22:36:38 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 22:36:38 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+128.62.58.156 - - [Thu, 19 Sep 2013 22:36:50 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+128.62.58.156 - - [Thu, 19 Sep 2013 22:37:11 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+128.62.58.156 - - [Thu, 19 Sep 2013 22:40:46 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 22:41:11 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 22:41:12 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 22:41:12 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 22:42:26 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 22:42:26 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 22:42:26 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+128.62.40.225 - - [Thu, 19 Sep 2013 23:04:28 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+Error: invalid json, empty body
+    at Object.exports.error (/home/jkim/aws/production/upNext/webapp/node_modules/express/node_modules/connect/lib/utils.js:60:13)
+    at IncomingMessage.<anonymous> (/home/jkim/aws/production/upNext/webapp/node_modules/express/node_modules/connect/lib/middleware/json.js:71:29)
+    at IncomingMessage.EventEmitter.emit (events.js:92:17)
+    at _stream_readable.js:883:14
+    at process._tickCallback (node.js:415:13)
+128.62.40.225 - - [Thu, 19 Sep 2013 23:05:13 GMT] "GET /api/ping HTTP/1.1" 400 449 "-" "curl/7.25.0 (x86_64-apple-darwin10.8.0) libcurl/7.25.0 OpenSSL/1.0.1b zlib/1.2.7 libidn/1.22"
+- - - [Thu, 19 Sep 2013 23:07:30 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:07:31 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:07:31 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+128.62.40.225 - - [Thu, 19 Sep 2013 23:07:53 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "curl/7.25.0 (x86_64-apple-darwin10.8.0) libcurl/7.25.0 OpenSSL/1.0.1b zlib/1.2.7 libidn/1.22"
+Error: invalid json, empty body
+    at Object.exports.error (/home/jkim/aws/production/upNext/webapp/node_modules/express/node_modules/connect/lib/utils.js:60:13)
+    at IncomingMessage.<anonymous> (/home/jkim/aws/production/upNext/webapp/node_modules/express/node_modules/connect/lib/middleware/json.js:71:29)
+    at IncomingMessage.EventEmitter.emit (events.js:92:17)
+    at _stream_readable.js:883:14
+    at process._tickCallback (node.js:415:13)
+128.62.40.225 - - [Thu, 19 Sep 2013 23:08:35 GMT] "GET /api/demo HTTP/1.1" 400 449 "-" "curl/7.25.0 (x86_64-apple-darwin10.8.0) libcurl/7.25.0 OpenSSL/1.0.1b zlib/1.2.7 libidn/1.22"
+128.62.40.225 - - [Thu, 19 Sep 2013 23:08:46 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "curl/7.25.0 (x86_64-apple-darwin10.8.0) libcurl/7.25.0 OpenSSL/1.0.1b zlib/1.2.7 libidn/1.22"
+128.62.40.225 - - [Thu, 19 Sep 2013 23:09:33 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:09:33 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:09:33 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+Error: invalid json
+    at Object.exports.error (/home/jkim/aws/production/upNext/webapp/node_modules/express/node_modules/connect/lib/utils.js:60:13)
+    at IncomingMessage.<anonymous> (/home/jkim/aws/production/upNext/webapp/node_modules/express/node_modules/connect/lib/middleware/json.js:74:71)
+    at IncomingMessage.EventEmitter.emit (events.js:92:17)
+    at _stream_readable.js:883:14
+    at process._tickCallback (node.js:415:13)
+128.62.40.225 - - [Thu, 19 Sep 2013 23:09:56 GMT] "POST /api/demo HTTP/1.1" 400 437 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+Error: invalid json
+    at Object.exports.error (/home/jkim/aws/production/upNext/webapp/node_modules/express/node_modules/connect/lib/utils.js:60:13)
+    at IncomingMessage.<anonymous> (/home/jkim/aws/production/upNext/webapp/node_modules/express/node_modules/connect/lib/middleware/json.js:74:71)
+    at IncomingMessage.EventEmitter.emit (events.js:92:17)
+    at _stream_readable.js:883:14
+    at process._tickCallback (node.js:415:13)
+128.62.40.225 - - [Thu, 19 Sep 2013 23:10:44 GMT] "POST /api/demo HTTP/1.1" 400 437 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+128.62.40.225 - - [Thu, 19 Sep 2013 23:11:03 GMT] "POST /api/demo HTTP/1.1" 404 - "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:11:20 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:11:20 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:11:20 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:11:37 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:11:37 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:11:37 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+128.62.40.225 - - [Thu, 19 Sep 2013 23:11:52 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:12:09 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:12:09 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+128.62.40.225 - - [Thu, 19 Sep 2013 23:12:09 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:12:36 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:12:36 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:12:36 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:12:46 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:12:46 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:12:46 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:13:21 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:13:21 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:13:21 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:13:33 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:13:33 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:13:33 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:14:03 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:14:03 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:14:03 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:17:22 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:17:22 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:17:22 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:18:55 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:18:55 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:18:55 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+128.62.40.225 - - [Thu, 19 Sep 2013 23:19:48 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:19:48 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:19:48 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+128.62.40.225 - - [Thu, 19 Sep 2013 23:20:03 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "curl/7.25.0 (x86_64-apple-darwin10.8.0) libcurl/7.25.0 OpenSSL/1.0.1b zlib/1.2.7 libidn/1.22"
+128.62.40.225 - - [Thu, 19 Sep 2013 23:20:11 GMT] "GET /api/ping HTTP/1.1" 200 23 "-" "curl/7.25.0 (x86_64-apple-darwin10.8.0) libcurl/7.25.0 OpenSSL/1.0.1b zlib/1.2.7 libidn/1.22"
+128.62.40.225 - - [Thu, 19 Sep 2013 23:20:18 GMT] "GET /api/demo HTTP/1.1" 200 24 "-" "curl/7.25.0 (x86_64-apple-darwin10.8.0) libcurl/7.25.0 OpenSSL/1.0.1b zlib/1.2.7 libidn/1.22"
+SyntaxError: Unexpected token n
+    at Object.parse (native)
+    at IncomingMessage.<anonymous> (/home/jkim/aws/production/upNext/webapp/node_modules/express/node_modules/connect/lib/middleware/json.js:76:27)
+    at IncomingMessage.EventEmitter.emit (events.js:92:17)
+    at _stream_readable.js:883:14
+    at process._tickCallback (node.js:415:13)
+128.62.40.225 - - [Thu, 19 Sep 2013 23:20:31 GMT] "GET /api/demo HTTP/1.1" 400 347 "-" "curl/7.25.0 (x86_64-apple-darwin10.8.0) libcurl/7.25.0 OpenSSL/1.0.1b zlib/1.2.7 libidn/1.22"
+128.62.40.225 - - [Thu, 19 Sep 2013 23:21:00 GMT] "GET /api/demo HTTP/1.1" 200 24 "-" "curl/7.25.0 (x86_64-apple-darwin10.8.0) libcurl/7.25.0 OpenSSL/1.0.1b zlib/1.2.7 libidn/1.22"
+- - - [Thu, 19 Sep 2013 23:32:32 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:32:32 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:32:32 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:33:08 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:33:08 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:33:08 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+128.62.40.225 - - [Thu, 19 Sep 2013 23:33:23 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+/home/jkim/aws/production/upNext/webapp/views/index.jade, line 14:
+Implicit textOnly for `script` and `style` is deprecated.  Use `script.` or `style.` instead.
+70.114.138.47 - - [Thu, 19 Sep 2013 23:36:31 GMT] "GET / HTTP/1.1" 200 4743 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+70.114.138.47 - - [Thu, 19 Sep 2013 23:36:31 GMT] "GET /css/screen-e052b49956.css HTTP/1.1" 404 - "http://uhpnext.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+70.114.138.47 - - [Thu, 19 Sep 2013 23:36:31 GMT] "GET /public/css/bootstrap.css HTTP/1.1" 404 - "http://uhpnext.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+70.114.138.47 - - [Thu, 19 Sep 2013 23:36:31 GMT] "GET /public/css/bootstrap-responsive.css HTTP/1.1" 404 - "http://uhpnext.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+70.114.138.47 - - [Thu, 19 Sep 2013 23:36:31 GMT] "GET /img/twitter.png HTTP/1.1" 200 2830 "http://uhpnext.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+70.114.138.47 - - [Thu, 19 Sep 2013 23:36:39 GMT] "GET /favicon.ico HTTP/1.1" 404 - "-" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+70.114.138.47 - - [Thu, 19 Sep 2013 23:36:39 GMT] "GET /img/jumbotron.png HTTP/1.1" 200 2772482 "http://uhpnext.com/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36"
+Error: invalid json, empty body
+    at Object.exports.error (/home/jkim/aws/production/upNext/webapp/node_modules/express/node_modules/connect/lib/utils.js:60:13)
+    at IncomingMessage.<anonymous> (/home/jkim/aws/production/upNext/webapp/node_modules/express/node_modules/connect/lib/middleware/json.js:71:29)
+    at IncomingMessage.EventEmitter.emit (events.js:92:17)
+    at _stream_readable.js:883:14
+    at process._tickCallback (node.js:415:13)
+128.62.40.225 - - [Thu, 19 Sep 2013 23:38:47 GMT] "POST /api/demo HTTP/1.1" 400 449 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+/home/jkim/aws/production/upNext/webapp/views/index.jade, line 14:
+Implicit textOnly for `script` and `style` is deprecated.  Use `script.` or `style.` instead.
+128.62.38.250 - - [Thu, 19 Sep 2013 23:39:15 GMT] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.38.250 - - [Thu, 19 Sep 2013 23:39:15 GMT] "GET /css/screen-e052b49956.css HTTP/1.1" 404 - "http://www.uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.38.250 - - [Thu, 19 Sep 2013 23:39:15 GMT] "GET /public/css/bootstrap.css HTTP/1.1" 404 - "http://www.uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.38.250 - - [Thu, 19 Sep 2013 23:39:15 GMT] "GET /public/css/bootstrap-responsive.css HTTP/1.1" 404 - "http://www.uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.38.250 - - [Thu, 19 Sep 2013 23:39:15 GMT] "GET /img/twitter.png HTTP/1.1" 304 - "http://www.uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.38.250 - - [Thu, 19 Sep 2013 23:39:15 GMT] "GET /img/jumbotron.png HTTP/1.1" 304 - "http://www.uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.40.225 - - [Thu, 19 Sep 2013 23:39:31 GMT] "POST /api/demo HTTP/1.1" 404 - "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:39:47 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:39:47 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Thu, 19 Sep 2013 23:39:47 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+Listening on port 80
+/home/jkim/aws/production/upNext/webapp/views/index.jade, line 14:
+Implicit textOnly for `script` and `style` is deprecated.  Use `script.` or `style.` instead.
+128.62.38.250 - - [Fri, 20 Sep 2013 00:01:50 GMT] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.38.250 - - [Fri, 20 Sep 2013 00:01:50 GMT] "GET /css/screen-e052b49956.css HTTP/1.1" 404 - "http://www.uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.38.250 - - [Fri, 20 Sep 2013 00:01:50 GMT] "GET /public/css/bootstrap.css HTTP/1.1" 404 - "http://www.uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.38.250 - - [Fri, 20 Sep 2013 00:01:50 GMT] "GET /public/css/bootstrap-responsive.css HTTP/1.1" 404 - "http://www.uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.38.250 - - [Fri, 20 Sep 2013 00:01:50 GMT] "GET /img/twitter.png HTTP/1.1" 304 - "http://www.uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.38.250 - - [Fri, 20 Sep 2013 00:01:50 GMT] "GET /img/jumbotron.png HTTP/1.1" 304 - "http://www.uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+/home/jkim/aws/production/upNext/webapp/views/index.jade, line 14:
+Implicit textOnly for `script` and `style` is deprecated.  Use `script.` or `style.` instead.
+128.62.38.250 - - [Fri, 20 Sep 2013 00:09:57 GMT] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.38.250 - - [Fri, 20 Sep 2013 00:09:57 GMT] "GET /public/css/bootstrap.css HTTP/1.1" 404 - "http://www.uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.38.250 - - [Fri, 20 Sep 2013 00:09:57 GMT] "GET /css/screen-e052b49956.css HTTP/1.1" 404 - "http://www.uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.38.250 - - [Fri, 20 Sep 2013 00:09:57 GMT] "GET /public/css/bootstrap-responsive.css HTTP/1.1" 404 - "http://www.uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.38.250 - - [Fri, 20 Sep 2013 00:09:57 GMT] "GET /img/twitter.png HTTP/1.1" 304 - "http://www.uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+128.62.38.250 - - [Fri, 20 Sep 2013 00:09:57 GMT] "GET /img/jumbotron.png HTTP/1.1" 304 - "http://www.uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36"
+- - - [Fri, 20 Sep 2013 00:21:55 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Fri, 20 Sep 2013 00:21:55 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+- - - [Fri, 20 Sep 2013 00:21:55 GMT] "GET /api/demo HTTP/1.1" 200 45 "-" "UpNextian/1.0 CFNetwork/609.1.4 Darwin/12.3.0"
+
+/home/jkim/aws/production/upNext/webapp/routes/api_temp.js:111
+        res.json("err" : '"' + "Email already exists!", 400);
+                       ^
+SyntaxError: Unexpected token :
+    at Module._compile (module.js:439:25)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at Object.<anonymous> (/home/jkim/aws/production/upNext/webapp/server.js:14:11)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+Listening on port 80
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: listen EADDRINUSE
+    at errnoException (net.js:883:11)
+    at Server._listen2 (net.js:1021:14)
+    at listen (net.js:1043:10)
+    at Server.listen (net.js:1109:5)
+    at Object.<anonymous> (/home/jkim/aws/production/upNext/webapp/server.js:158:8)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Function.Module.runMain (module.js:497:10)
+Listening on port 80
+/home/jkim/aws/production/upNext/webapp/views/index_no_login.jade, line 13:
+Implicit textOnly for `script` and `style` is deprecated.  Use `script.` or `style.` instead.
+/home/jkim/aws/production/upNext/webapp/views/index_no_login.jade, line 202:
+Implicit textOnly for `script` and `style` is deprecated.  Use `script.` or `style.` instead.
+/home/jkim/aws/production/upNext/webapp/views/index_no_login.jade, line 209:
+Implicit textOnly for `script` and `style` is deprecated.  Use `script.` or `style.` instead.
+128.62.31.128 - - [Sun, 29 Sep 2013 05:29:39 GMT] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+128.62.31.128 - - [Sun, 29 Sep 2013 05:29:39 GMT] "GET /css/bootstrap.min.css HTTP/1.1" 304 - "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+128.62.31.128 - - [Sun, 29 Sep 2013 05:29:39 GMT] "GET /public/css/bootstrap-responsive.css HTTP/1.1" 404 - "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+128.62.31.128 - - [Sun, 29 Sep 2013 05:29:39 GMT] "GET /img/facebook.png HTTP/1.1" 304 - "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+128.62.31.128 - - [Sun, 29 Sep 2013 05:29:39 GMT] "GET /img/twitter.png HTTP/1.1" 304 - "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+128.62.31.128 - - [Sun, 29 Sep 2013 05:29:39 GMT] "GET /img/jumbotron.png HTTP/1.1" 304 - "http://uhpnext.com/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"
+128.62.31.128 - - [Sun, 29 Sep 2013 05:29:42 GMT] "GET /api/list HTTP/1.1" 200 69 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.76 Safari/537.36"

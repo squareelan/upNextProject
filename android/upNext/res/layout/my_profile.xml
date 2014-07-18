@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>    
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+       <TextView 
+           android:id="@+id/account"
+           android:layout_alignParentTop="true"
+           android:layout_alignParentLeft="true"
+           android:layout_marginLeft="30dp"
+           android:layout_marginTop="20dp"
+           android:layout_marginBottom="5dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/account"
+           android:textSize="25sp"/>
+       
+       <View 
+           android:id="@+id/red_line"
+           android:layout_width="fill_parent"
+           android:layout_height="2dip"
+           android:layout_below="@id/account"
+           android:background="#1DB592"/>
+    
+    <com.facebook.widget.ProfilePictureView 
+        android:id="@+id/profile_picture"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/red_line"
+        android:layout_alignLeft="@id/account"
+        android:layout_marginTop="15dp"/>
+    
+    <TextView 
+        android:id="@+id/user_name"
+        android:layout_toRightOf="@id/profile_picture"
+        android:layout_alignTop="@id/profile_picture"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/name"/>
+    
+    <TextView 
+        android:id="@+id/user_point"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/user_name"
+        android:layout_centerInParent="true"
+        android:layout_alignLeft="@id/user_name"
+        android:text="@string/point"/>	
+    
+    <com.facebook.widget.LoginButton
+        android:id="@+id/logout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/user_point" 
+        android:layout_alignLeft="@id/user_point"
+        android:layout_alignBottom="@id/profile_picture"/>	    
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_picture"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:text="@string/history"
+        android:id="@+id/history"/>
+    
+    <View 
+        android:id="@+id/red_line2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@id/history"
+        android:background="#1DB592"
+        android:layout_marginTop="5dp"/>
+    
+    <ListView 
+        android:id="@+id/history_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/histories_sample"
+        android:layout_below="@id/red_line2"/>
+    
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView 
+        android:id="@+id/busyness_msg"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/crowd"
+	    android:textSize="20sp"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginLeft="14dp"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="10dp"/>
+    
+    <ImageView 
+	    android:id="@+id/busy_button"
+	    android:src="@drawable/button_busy"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_below="@id/busyness_msg"
+	    android:layout_alignLeft="@id/busyness_msg" /> 
+    
+    <ImageView
+        android:id="@+id/not_busy_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_alignTop="@+id/busy_button"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:src="@drawable/button_not_busy" />
+    
+    <TextView 
+        android:id="@+id/crowd_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/flow"
+        android:layout_below="@id/busy_button"
+        android:layout_alignLeft="@id/busyness_msg"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    
+    <Spinner 
+        android:id="@+id/crowd_spinner"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignLeft="@id/crowd_msg"
+        android:layout_below="@id/crowd_msg"
+        android:entries="@array/crowd_sizes"/>
+    
+    <TextView 
+        android:id="@+id/wait_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/waiting"
+        android:layout_below="@id/crowd_spinner"
+        android:layout_alignLeft="@id/busyness_msg"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    
+    <Spinner 
+        android:id="@+id/wait_spinner"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignLeft="@id/crowd_msg"
+        android:layout_below="@id/wait_msg"
+        android:entries="@array/wait_times"/>
+    
+    <View 
+        android:layout_height="20dp"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/wait_spinner"/>
+    
+</RelativeLayout>

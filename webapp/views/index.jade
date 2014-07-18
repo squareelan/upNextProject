@@ -1,0 +1,272 @@
+!!! 5
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    //link(rel='shortcut icon', href='assets/img/favicon.png')
+    title upNext - Home
+    // Bootstrap core CSS
+    link(href='css/bootstrap.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='css/main.css', rel='stylesheet')
+    // Fonts from Google Fonts
+    link(href='http://fonts.googleapis.com/css?family=Lato:300,400,900', rel='stylesheet', type='text/css')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
+  body(data-spy='scroll', data-offset='0', data-target='#navigation')
+    // Fixed navbar
+    #navigation.navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#')
+            b UPNEXT
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li.active
+              a.smothscroll(href='#home') Home
+            li
+              a.smothscroll(href='#desc') Description
+            li
+              a.smothScroll(href='#showcase') Showcase
+            li
+              a.smothScroll(href='#team') Team
+            li
+              a.smothScroll(href='#contact') Contact
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#') Already a member?
+        // /.nav-collapse
+    section#home(name='home')
+    #headerwrap
+      .container
+        .row
+          .col-lg-6
+            p
+              h1
+                | Never Wait again. 
+                br
+                | Be 
+                b upNext!
+            form.form-inline(name='subscribe', role='form' action='/api/email-subscribe/', method='get', enctype='plain')
+              .form-group
+                input#userEmail.form-control-2(name='email', type='email', placeholder='Enter your email address')
+              button.btn.btn-warning.btn-lg(type='submit') Invite Me!
+          // /col-lg-6
+          .col-lg-6
+            //img.img-responsive(src='img/jumbo.png', alt='')
+          // /col-lg-6
+        // /row
+      // /container
+    // /headerwrap
+    section#desc(name='desc')
+    .container
+      .row.mt.centered
+        .col-lg-6.col-lg-offset-3
+          h1
+            | Control your wait time
+            br
+            | And start living!
+          h3
+            | Something about how we will change the world and experience going out to eat and such. Disney experience in our daily life.
+      // /row
+      .row.mt.centered
+        .col-lg-4
+          img(src='img/ser01.png', width='180', alt='')
+          h4 1 - Real Life Wait Times
+          p
+            | Something about how end users are able to see live traffic at local businesses and how this can save their time and money.
+        // /col-lg-4
+        .col-lg-4
+          img(src='img/ser02.png', width='180', alt='')
+          h4 2 - Crowd Traffic Control
+          p
+            | How are planning to improve business handles crowds and provide better customer serivce for customers.
+        // /col-lg-4
+        .col-lg-4
+          img(src='img/ser03.png', width='180', alt='')
+          h4 3 - Turn downtime into primetime
+          p
+            | Maximize sales by using promote special deals during downtime to attract customers.
+        // /col-lg-4
+      // /row
+    // /container
+    .container
+      hr
+    // /container
+    section#showcase(name='showcase')
+    .container
+      .row.mt.centered
+        .col-lg-6.col-lg-offset-3
+          h1 upNext is the new way to save time and moeny.
+          h3 Take control of your valuable time. Spendless time waiting more time enjoying!
+      // /row
+      .row.mt.centered
+        .col-lg-6.col-lg-offset-3
+          #carousel-example-generic.carousel.slide(data-ride='carousel')
+            // Indicators
+            ol.carousel-indicators
+              li.active(data-target='#carousel-example-generic', data-slide-to='0')
+              li(data-target='#carousel-example-generic', data-slide-to='1')
+              li(data-target='#carousel-example-generic', data-slide-to='2')
+              li(data-target='#carousel-example-generic', data-slide-to='3')
+            // Wrapper for slides
+            .carousel-inner
+              .item.active
+                img(src='img/p01.png', alt='')
+              .item
+                img(src='img/2.png', alt='')
+              .item
+                img(src='img/3.png', alt='')
+              .item
+                img(src='img/4.png', alt='')
+        // /col-lg-8
+      // /row
+    .container
+      hr
+    // /container
+    section#team(name='team')
+    .container
+      .row.mt.centered
+        .col-lg-6.col-lg-offset-3
+          h1
+            | Our Awesome Team.
+            br
+            | Team Incredible.
+          h3 Message about we are part of longhorn startup and we are UT students and such.
+      // /row
+      .row.mt.centered
+        .col-lg-4
+          img.img-circle(src='img/joseph.jpg', width='140', alt='')
+          h4 Si Wan Kim
+          p
+            i CEO & Co-Founder
+            br
+            | upNext is my baby.
+          p
+            i.glyphicon.glyphicon-send
+            i.glyphicon.glyphicon-phone
+            i.glyphicon.glyphicon-globe
+        // /col-lg-4
+        .col-lg-4
+          img.img-circle(src='img/juyong.jpg', width='140', alt='')
+          h4 Juyong Kim
+          p
+            i CTO 
+            br
+            | He is taken. Sorry ladies.
+          p
+            i.glyphicon.glyphicon-send
+            i.glyphicon.glyphicon-phone
+            i.glyphicon.glyphicon-globe
+        // /col-lg-4
+        .col-lg-4
+          img.img-circle(src='img/neda.jpg', width='140', alt='')
+          h4 Neda Samani
+          p
+            i COO
+            br
+            | She likes jigglypuff. nuff said.
+          p
+            i.glyphicon.glyphicon-send
+            i.glyphicon.glyphicon-phone
+            i.glyphicon.glyphicon-globe
+      .row.mt.centered
+        .col-lg-6
+          img.img-circle(src='img/dae.jpg', width='140', alt='')
+          h4 Dae Park
+          p
+            i Android Developer
+            br
+            | Diamond 5 player. Hit him up @nutcrack.
+          p
+            i.glyphicon.glyphicon-send
+            i.glyphicon.glyphicon-phone
+            i.glyphicon.glyphicon-globe
+        .col-lg-6
+          img.img-circle(src='img/ian.jpg', width='140', alt='')
+          h4 Yongjun Yoo
+          p
+            i iOS Developer
+            br
+            | Plat player. Hit him up @HappySnail.
+          p
+            i.glyphicon.glyphicon-send
+            i.glyphicon.glyphicon-phone
+            i.glyphicon.glyphicon-globe
+      // /row
+    //- // /container
+    //- .container
+    //-   hr
+    section#contact(name='contact')
+    #footerwrap
+      .container
+        .col-lg-5
+          h3 Address
+          p
+            | 701 Brazos St #1601
+            br
+            | Austin,
+            br
+            | 78701
+            br
+            | United States
+        .col-lg-7
+          h3 Drop Us A Line
+          br
+          form(role='form', action='MAILTO:upnextdev@gmail.com', method='post', enctype='plain')
+            .form-group
+              label(for='name1') Your Name
+              input#name1.form-control(type='name', name='Name', placeholder='Your Name')
+            .form-group
+              label(for='email1') Email address
+              input#email1.form-control(type='email', name='Mail', placeholder='Enter email')
+            .form-group
+              label Your Text
+              textarea.form-control(name='Message', rows='3')
+            br
+            button.btn.btn-large.btn-success(type='submit') SUBMIT
+    #c
+      .container
+          a(href="#" align='center') upNext ©
+          p All Right Reserved.
+    //- hr
+    //- .container
+    //-   .row.centered
+    //-     .col-lg-6.col-lg-offset-3
+    //-       form.form-inline(role='form')
+    //-         .form-group
+    //-           input#exampleInputEmail1.form-control(type='email', placeholder='Enter your email address')
+    //-         button.btn.btn-warning.btn-lg(type='submit') Invite Me!
+    //-     .col-lg-3
+    //-   // /row
+      //- hr
+      div(style='text-align: center;')
+        a(href="#" align='center') upNext ©
+      p.centered All Right Reserved.
+    // /container
+    //
+      Bootstrap core JavaScript
+    // Placed at the end of the document so the pages load faster
+    script(src='https://code.jquery.com/jquery-1.10.2.min.js')
+    script(src='js/bootstrap.min.js')
+    // script(type='text/javascript')
+    //   function subscribeEmail() {
+    //     var userEmail = document.getElementById("userEmail").value;
+    //     // var emailAPIEntryPoint = 'http://www.uhpnext.com/api/email-subscribe/?email=';
+    //     var emailAPIEntryPoint = 'http://www.uhpnext.com/api/email-subscribe';
+    //     emailAPIEntryPoint += userEmail;
+    //     $.post(emailAPIEntryPoint, {email: userEmail}, 
+    //       function())
+    //     // alert(userEmail);
+    //   }
+
+
